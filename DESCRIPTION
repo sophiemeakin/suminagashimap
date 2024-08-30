@@ -1,0 +1,14 @@
+Package: suminagashimap
+Title: Make Suminagashi-style Topographic Map Art
+Version: 0.0.0.9000
+Authors@R: person(
+    "Sophie", "Meakin",
+    email = "sophiemeakin@outlook.com",
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0002-6385-2652")
+    )
+Description: Make fun suminagashi-style topographic map art from elevation data. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
