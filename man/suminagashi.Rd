@@ -4,7 +4,7 @@
 \alias{suminagashi}
 \title{Make suminagashi-style topographic map art}
 \usage{
-suminagashi(elev, xlim, ylim, pal_breaks, pal, file_name)
+suminagashi(elev, xlim, ylim, pal_breaks, pal, file_name, bd = FALSE)
 }
 \arguments{
 \item{elev}{An elevation raster object of the mapping area}

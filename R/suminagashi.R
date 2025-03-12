@@ -7,6 +7,7 @@
 #' @param pal Colour palette for contours; repeated if shorter than `pal_breaks`
 #' @param file_name Optional: file name and extension
 #' 
+#' @rdname suminagashi
 #' @export
 suminagashi <- function(
     elev, 
