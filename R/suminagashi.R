@@ -15,7 +15,7 @@ suminagashi <- function(
     pal_breaks,
     pal,
     file_name,
-    bd = FALSE
+    hb = FALSE
 ) {
   
   elev_df <- data.frame(raster::rasterToPoints(elev)) |> 
@@ -60,7 +60,7 @@ suminagashi <- function(
     
   }
   
-  if(bd) {
+  if(hb) {
     message("Happy birthday!")
   }
   
