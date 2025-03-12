@@ -13,7 +13,8 @@ suminagashi <- function(
     xlim, ylim,
     pal_breaks,
     pal,
-    file_name
+    file_name,
+    bd = FALSE
 ) {
   
   elev_df <- data.frame(raster::rasterToPoints(elev)) |> 
@@ -56,6 +57,10 @@ suminagashi <- function(
       dpi = 600
     )
     
+  }
+  
+  if(bd) {
+    message("Happy birthday!")
   }
   
   return(g)
