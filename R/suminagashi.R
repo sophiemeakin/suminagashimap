@@ -14,6 +14,7 @@ suminagashi <- function(
     xlim, ylim,
     pal_breaks,
     pal,
+    a = 1,
     file_name,
     hb = FALSE
 ) {
@@ -34,6 +35,7 @@ suminagashi <- function(
       ggplot2::aes(z = z),
       col = NA,
       breaks = pal_breaks,
+      alpha = a,
       show.legend = FALSE
     ) +
     # Palette
@@ -46,8 +48,9 @@ suminagashi <- function(
       axis.line = ggplot2::element_blank(),
       axis.ticks = ggplot2::element_blank(),
       axis.text = ggplot2::element_blank(),
-      panel.background = ggplot2::element_blank(),
-      panel.grid = ggplot2::element_blank()
+      panel.grid = ggplot2::element_blank(),
+      panel.background = ggplot2::element_rect(fill = "transparent", colour = NA),
+      plot.background  = ggplot2::element_rect(fill = "transparent", colour = NA)
     )
   
   if(!missing(file_name)) {
@@ -101,7 +104,7 @@ scale_fill_suminagashi <- function(
   }
   
   out <- ggplot2::scale_fill_manual(
-    values = pal_values
+    values = pal_values, na.value = NA
   )
   return(out)
   
